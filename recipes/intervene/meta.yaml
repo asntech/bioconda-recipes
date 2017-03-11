@@ -1,0 +1,34 @@
+package:
+  name: intervene
+  version: "0.5.7"
+
+source:
+  fn: intervene-0.5.7.tar.gz
+  url: https://pypi.python.org/packages/ba/22/96716723791a370d09f5ee734f2c1b603df8028f1e9ebad4ea0b6f60b6b7/intervene-0.5.7.tar.gz
+  md5: 34d99f721dd5f85ffc06f1acf191ab01
+
+build:
+  skip: False
+  number: 0
+
+requirements:
+  build:
+    - python
+    - setuptools
+    - numpy
+    - scipy
+    - pandas
+    - matplotlib
+    - pybedtools
+
+  run:
+    - python
+
+test:
+  imports:
+  #  - intervene
+
+about:
+  home: https://github.com/asntech/intervene
+  license: BSD License
+  summary: 'Intervene is a toolfor intersection and visualization of multiple genomic region and gene sets'
